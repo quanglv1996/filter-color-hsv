@@ -125,6 +125,7 @@ class ChangingColorspacesUI(QMainWindow):
         self.changing_colorspace_lib.update_colorspaces(hl, sl, vl, hu, su, vu)
         
     def evt_btBack_clicked(self):
+        self.video.is_running = False
         self.close()
         self.main_window.show()
         self.main_window.pushButtonApplyMode.setDisabled(False)
