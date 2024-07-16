@@ -78,8 +78,6 @@ class ChangingColorspacesUI(QMainWindow):
         self.horizontalSliderSU.valueChanged.connect(self.valueChangeSaturationUpper)
         self.horizontalSliderVU.valueChanged.connect(self.valueChangeValueUpper)
         
-        
-        
         # Show the app
         self.show()
         
